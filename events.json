@@ -1,0 +1,425 @@
+[
+    {
+      "id": "event-1",
+      "title": "Team Meeting",
+      "description": "Weekly sync-up to discuss project progress and upcoming tasks.",
+      "time": "2024-11-19T09:00:00Z",
+      "duration": "1 hour",
+      "minutes_plan": [
+        {
+          "id": "activity-1",
+          "activity": "Introduction",
+          "duration_minutes": 5
+        },
+        {
+          "id": "activity-2",
+          "activity": "Project Updates",
+          "duration_minutes": 15
+        },
+        {
+          "id": "activity-3",
+          "activity": "Task Allocation",
+          "duration_minutes": 20
+        },
+        {
+          "id": "activity-4",
+          "activity": "Q&A and Discussion",
+          "duration_minutes": 10
+        },
+        {
+          "id": "activity-5",
+          "activity": "Next Steps and Conclusion",
+          "duration_minutes": 10
+        }
+      ],
+      "attendees": [
+        {
+          "id": "attendee-1",
+          "name": "Alice Johnson",
+          "role": "Project Manager",
+          "display_picture": "https://randomuser.me/api/portraits/women/1.jpg"
+        },
+        {
+          "id": "attendee-2",
+          "name": "Bob Smith",
+          "role": "Lead Developer",
+          "display_picture": "https://randomuser.me/api/portraits/men/2.jpg"
+        },
+        {
+          "id": "attendee-3",
+          "name": "Charlie Davis",
+          "role": "UX Designer",
+          "display_picture": "https://randomuser.me/api/portraits/men/3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "event-2",
+      "title": "Client Presentation",
+      "description": "Present the final design proposal to the client and gather feedback.",
+      "time": "2024-11-19T14:00:00Z",
+      "duration": "1.5 hours",
+      "minutes_plan": [
+        {
+          "id": "activity-6",
+          "activity": "Introduction & Overview",
+          "duration_minutes": 10
+        },
+        {
+          "id": "activity-7",
+          "activity": "Design Walkthrough",
+          "duration_minutes": 30
+        },
+        {
+          "id": "activity-8",
+          "activity": "Feedback Collection",
+          "duration_minutes": 20
+        },
+        {
+          "id": "activity-9",
+          "activity": "Discussion of Revisions",
+          "duration_minutes": 20
+        },
+        {
+          "id": "activity-10",
+          "activity": "Conclusion & Next Steps",
+          "duration_minutes": 10
+        }
+      ],
+      "attendees": [
+        {
+          "id": "attendee-4",
+          "name": "David Lee",
+          "role": "Account Manager",
+          "display_picture": "https://randomuser.me/api/portraits/men/4.jpg"
+        },
+        {
+          "id": "attendee-5",
+          "name": "Emily Turner",
+          "role": "Graphic Designer",
+          "display_picture": "https://randomuser.me/api/portraits/women/5.jpg"
+        },
+        {
+          "id": "attendee-6",
+          "name": "Mia Roberts",
+          "role": "Client Representative",
+          "display_picture": "https://randomuser.me/api/portraits/women/6.jpg"
+        }
+      ]
+    },
+    {
+      "id": "event-3",
+      "title": "Brainstorming Session",
+      "description": "Collaborative session to generate ideas for the upcoming marketing campaign.",
+      "time": "2024-11-19T16:00:00Z",
+      "duration": "2 hours",
+      "minutes_plan": [
+        {
+          "id": "activity-11",
+          "activity": "Icebreaker",
+          "duration_minutes": 10
+        },
+        {
+          "id": "activity-12",
+          "activity": "Idea Generation",
+          "duration_minutes": 45
+        },
+        {
+          "id": "activity-13",
+          "activity": "Group Discussion",
+          "duration_minutes": 30
+        },
+        {
+          "id": "activity-14",
+          "activity": "Refinement of Ideas",
+          "duration_minutes": 20
+        },
+        {
+          "id": "activity-15",
+          "activity": "Action Plan",
+          "duration_minutes": 15
+        }
+      ],
+      "attendees": [
+        {
+          "id": "attendee-7",
+          "name": "Sophia Martinez",
+          "role": "Marketing Lead",
+          "display_picture": "https://randomuser.me/api/portraits/women/7.jpg"
+        },
+        {
+          "id": "attendee-8",
+          "name": "James Brown",
+          "role": "Content Strategist",
+          "display_picture": "https://randomuser.me/api/portraits/men/8.jpg"
+        },
+        {
+          "id": "attendee-9",
+          "name": "Liam White",
+          "role": "SEO Specialist",
+          "display_picture": "https://randomuser.me/api/portraits/men/9.jpg"
+        }
+      ]
+    },
+    {
+      "id": "event-4",
+      "title": "Team Building Activity",
+      "description": "Interactive games and activities to enhance team collaboration and communication.",
+      "time": "2024-11-19T18:00:00Z",
+      "duration": "3 hours",
+      "minutes_plan": [
+        {
+          "id": "activity-16",
+          "activity": "Welcome & Introduction",
+          "duration_minutes": 15
+        },
+        {
+          "id": "activity-17",
+          "activity": "Icebreaker Activity",
+          "duration_minutes": 30
+        },
+        {
+          "id": "activity-18",
+          "activity": "Main Team Activity",
+          "duration_minutes": 60
+        },
+        {
+          "id": "activity-19",
+          "activity": "Debrief & Reflection",
+          "duration_minutes": 30
+        },
+        {
+          "id": "activity-20",
+          "activity": "Wrap-up & Feedback",
+          "duration_minutes": 15
+        }
+      ],
+      "attendees": [
+        {
+          "id": "attendee-10",
+          "name": "Olivia Green",
+          "role": "HR Coordinator",
+          "display_picture": "https://randomuser.me/api/portraits/women/10.jpg"
+        },
+        {
+          "id": "attendee-11",
+          "name": "Ethan Scott",
+          "role": "Team Lead",
+          "display_picture": "https://randomuser.me/api/portraits/men/11.jpg"
+        },
+        {
+          "id": "attendee-12",
+          "name": "Lucas King",
+          "role": "Software Engineer",
+          "display_picture": "https://randomuser.me/api/portraits/men/12.jpg"
+        }
+      ]
+    },
+    {
+      "id": "event-5",
+      "title": "Product Strategy Discussion",
+      "description": "Discuss new features and product improvements with the product team.",
+      "time": "2024-11-20T09:00:00Z",
+      "duration": "1.5 hours",
+      "minutes_plan": [
+        {
+          "id": "activity-21",
+          "activity": "Product Roadmap Review",
+          "duration_minutes": 20
+        },
+        {
+          "id": "activity-22",
+          "activity": "Feature Prioritization",
+          "duration_minutes": 30
+        },
+        {
+          "id": "activity-23",
+          "activity": "User Feedback Analysis",
+          "duration_minutes": 20
+        },
+        {
+          "id": "activity-24",
+          "activity": "Wrap-up and Action Items",
+          "duration_minutes": 20
+        }
+      ],
+      "attendees": [
+        {
+          "id": "attendee-13",
+          "name": "Daniel Harris",
+          "role": "Product Manager",
+          "display_picture": "https://randomuser.me/api/portraits/men/13.jpg"
+        },
+        {
+          "id": "attendee-14",
+          "name": "Isabella Adams",
+          "role": "Marketing Director",
+          "display_picture": "https://randomuser.me/api/portraits/women/14.jpg"
+        },
+        {
+          "id": "attendee-15",
+          "name": "Mason Clark",
+          "role": "PR Specialist",
+          "display_picture": "https://randomuser.me/api/portraits/men/15.jpg"
+        }
+      ]
+    },
+    {
+      "id": "event-6",
+      "title": "Sales Team Briefing",
+      "description": "Align the sales team on new product updates and sales targets.",
+      "time": "2024-11-20T12:00:00Z",
+      "duration": "1 hour",
+      "minutes_plan": [
+        {
+          "id": "activity-25",
+          "activity": "Sales Update Overview",
+          "duration_minutes": 15
+        },
+        {
+          "id": "activity-26",
+          "activity": "Target Setting Discussion",
+          "duration_minutes": 20
+        },
+        {
+          "id": "activity-27",
+          "activity": "Q&A and Closing Remarks",
+          "duration_minutes": 25
+        }
+      ],
+      "attendees": [
+        {
+          "id": "attendee-16",
+          "name": "Sophia Davis",
+          "role": "Sales Director",
+          "display_picture": "https://randomuser.me/api/portraits/women/15.jpg"
+        },
+        {
+          "id": "attendee-17",
+          "name": "John Miller",
+          "role": "Sales Representative",
+          "display_picture": "https://randomuser.me/api/portraits/men/16.jpg"
+        }
+      ]
+    },
+    {
+      "id": "event-7",
+      "title": "Design Critique",
+      "description": "Review and critique the latest design mockups with the design team.",
+      "time": "2024-11-20T15:00:00Z",
+      "duration": "1 hour",
+      "minutes_plan": [
+        {
+          "id": "activity-28",
+          "activity": "Introduction & Agenda",
+          "duration_minutes": 5
+        },
+        {
+          "id": "activity-29",
+          "activity": "Design Review",
+          "duration_minutes": 40
+        },
+        {
+          "id": "activity-30",
+          "activity": "Action Items & Wrap-up",
+          "duration_minutes": 15
+        }
+      ],
+      "attendees": [
+        {
+          "id": "attendee-18",
+          "name": "Olivia Reed",
+          "role": "Senior Designer",
+          "display_picture": "https://randomuser.me/api/portraits/women/16.jpg"
+        },
+        {
+          "id": "attendee-19",
+          "name": "Liam White",
+          "role": "Junior Designer",
+          "display_picture": "https://randomuser.me/api/portraits/men/17.jpg"
+        }
+      ]
+    },
+    {
+      "id": "event-8",
+      "title": "Content Strategy Meeting",
+      "description": "Discuss the content strategy for the upcoming product release.",
+      "time": "2024-11-20T17:00:00Z",
+      "duration": "1 hour",
+      "minutes_plan": [
+        {
+          "id": "activity-31",
+          "activity": "Overview of Product Features",
+          "duration_minutes": 15
+        },
+        {
+          "id": "activity-32",
+          "activity": "Content Calendar Planning",
+          "duration_minutes": 30
+        },
+        {
+          "id": "activity-33",
+          "activity": "Review and Finalize Content",
+          "duration_minutes": 15
+        }
+      ],
+      "attendees": [
+        {
+          "id": "attendee-20",
+          "name": "Grace Williams",
+          "role": "Content Manager",
+          "display_picture": "https://randomuser.me/api/portraits/women/17.jpg"
+        },
+        {
+          "id": "attendee-21",
+          "name": "James Brown",
+          "role": "Copywriter",
+          "display_picture": "https://randomuser.me/api/portraits/men/18.jpg"
+        }
+      ]
+    },
+    {
+      "id": "event-9",
+      "title": "Product Launch Strategy",
+      "description": "Discuss strategies for the upcoming product launch.",
+      "time": "2024-11-21T09:00:00Z",
+      "duration": "2 hours",
+      "minutes_plan": [
+        {
+          "id": "activity-34",
+          "activity": "Launch Timeline Review",
+          "duration_minutes": 30
+        },
+        {
+          "id": "activity-35",
+          "activity": "Marketing Plan Discussion",
+          "duration_minutes": 45
+        },
+        {
+          "id": "activity-36",
+          "activity": "Sales Strategies",
+          "duration_minutes": 30
+        },
+        {
+          "id": "activity-37",
+          "activity": "Final Q&A",
+          "duration_minutes": 15
+        }
+      ],
+      "attendees": [
+        {
+          "id": "attendee-22",
+          "name": "Matthew Roberts",
+          "role": "Product Lead",
+          "display_picture": "https://randomuser.me/api/portraits/men/19.jpg"
+        },
+        {
+          "id": "attendee-23",
+          "name": "Anna Perez",
+          "role": "Marketing Lead",
+          "display_picture": "https://randomuser.me/api/portraits/women/18.jpg"
+        }
+      ]
+    }
+  ]
+  
