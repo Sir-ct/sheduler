@@ -1,6 +1,6 @@
 import { Colors } from "@/constants/Colors";
 import React from "react";
-import { Image, TouchableOpacity, StyleSheet, Text, View } from "react-native";
+import { Image, TouchableOpacity, StyleSheet, Text, View, ImageBackground } from "react-native";
 import CheckmarkIcon from "./Icons/CheckmarkIcon";
 import { getEndTime } from "@/utils/helpers"
 import dayjs from "dayjs";
@@ -30,37 +30,41 @@ interface EventProps {
 }
 
 export default function EventCard(props: EventCardProps){
-    const isEventOver = dayjs() > dayjs(props.event.time)
-    const startTime = dayjs(props.event.time).format('hh:mm')
-    const endTime = getEndTime(props.event.time, props.event.duration)
-    console.log(props.event, "start", startTime, "endTime", endTime, isEventOver, props.index)
+    const isEventOver = dayjs() > dayjs(props?.event?.time)
+    const startTime = dayjs(props?.event?.time).format('hh:mm')
+    const endTime = props.event && getEndTime(props?.event?.time, props?.event?.duration)
+
+    const backgroundImg = props.index == 0  ? require("@/assets/images/first-bg.png") : props.index == 2 ? require("@/assets/images/bg-2.png") : ""
     return(
         <>
         {
             isEventOver
             ?
                 <TouchableOpacity onPress={()=>{props.onSelect(props.event)}} style={[styles.cardWrap, {backgroundColor: props.index == 0 ? "#FCD36A" : props.index == 1 ? Colors.light.background : "#6DCE0C"}]}>
+                    <ImageBackground source={backgroundImg} resizeMode="stretch">
                     <View style={[styles.toprowWrap, {marginBottom: 0}]}>
                         <View style={[styles.toprowText]}>
-                            <Text style={[styles.textLarge]}>{props.event.title}</Text>
-                            <Text style={[styles.textMedium]}>{props.event.description.length > 25 ? props.event.description.substring(0, 24)+ " ..." : props.event.description}</Text>
+                            <Text style={[styles.textLarge]}>{props?.event?.title}</Text>
+                            <Text style={[styles.textMedium]}>{props?.event?.description.length > 25 ? props?.event?.description.substring(0, 24)+ " ..." : props?.event?.description}</Text>
                         </View>
                         <View style={[styles.indicator]}>
                             <CheckmarkIcon />
                         </View>
                     </View>
+                    </ImageBackground>
                 </TouchableOpacity>
                 :
-                <TouchableOpacity onPress={()=>{props.onSelect(props.event)}} style={[styles.cardWrap]}>
+                <TouchableOpacity onPress={()=>{props.onSelect(props.event)}} style={[styles.cardWrap,  {backgroundColor: props.index == 0 ? "#FCD36A" : props.index == 1 ? Colors.light.background : "#6DCE0C"}]}>
+                    <ImageBackground source={backgroundImg} resizeMode="stretch">
                     <View style={[styles.toprowWrap]}>
                         <View style={[styles.toprowText]}>
                             <Text style={[styles.textMedium]}>{startTime} - {endTime}</Text>
-                            <Text style={[styles.textLarge]}>{props.event.title}</Text>
-                            <Text style={[styles.textMedium]}>{props.event.description.length > 25 ? props.event.description.substring(0, 24)+ " ..." : props.event.description}</Text>
+                            <Text style={[styles.textLarge]}>{props?.event?.title}</Text>
+                            <Text style={[styles.textMedium]}>{props?.event?.description.length > 25 ? props?.event?.description.substring(0, 24)+ " ..." : props?.event?.description}</Text>
                         </View>
                         <View style={[styles.attendeeImgWrap]}>
                             {
-                                props.event.attendees.map((attendee, i)=>{
+                                props?.event?.attendees.map((attendee, i)=>{
                                     if (i <= 2)
                                     return(
                                         <Image 
@@ -80,16 +84,17 @@ export default function EventCard(props: EventCardProps){
                             gap: 10
                         }}>
                             <View style={[styles.bottomrowTimeDisplay]}>
-                                <Text style={[styles.btdText]}>{dayjs(props.event.time).day() === dayjs().day() ? "Today" : dayjs(props.event.time).format("dddd")}</Text>
+                                <Text style={[styles.btdText]}>{dayjs(props?.event?.time).day() === dayjs().day() ? "Today" : dayjs(props.event?.time).format("dddd")}</Text>
                             </View>
                             <View style={[styles.bottomrowTimeDisplay]}>
-                                <Text style={[styles.btdText]}>{props.event.duration.split(" ")[0]}{props.event.duration.split(" ")[1].substring(0, 1)}</Text>
+                                 <Text style={[styles.btdText]}>{props.event && props?.event?.duration?.split(" ")[0]}{ props.event && props?.event?.duration?.split(" ")[1].substring(0, 1)}</Text>
                             </View>
                         </View>
                         <View style={[styles.indicator]}>
                             <ArrowupIcon />
                         </View>
                     </View>
+                    </ImageBackground>
                 </TouchableOpacity>
         }
         </>

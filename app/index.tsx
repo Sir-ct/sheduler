@@ -12,6 +12,10 @@ export default function Index() {
   const [showEventModal, setShowEventModal] = useState(false)
   const [selectedEvent, setSelectedEvent] = useState(null)
 
+  const todaysEvents:any = events.filter((ev)=>{
+    return (dayjs().day() == dayjs(ev.time).day())
+  })
+
   function openEventModal(){
     setShowEventModal(true)
   }
@@ -30,8 +34,7 @@ export default function Index() {
       <DateComponent />
       <ScrollView>
         {
-          events.map((ev, i)=>{
-            if(dayjs().day() == dayjs(ev.time).day())
+          events && todaysEvents.map((ev:any, i:any)=>{
             return(
               <EventCard key={"ev"+i} index={i} event={ev} onSelect={selectEvent} />
             )

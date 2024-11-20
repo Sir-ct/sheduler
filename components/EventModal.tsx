@@ -53,10 +53,15 @@ export default function EventModal({isVisible, onClose, event}: any){
 
                 <ScrollView>
                     <Text style={[styles.textLarge]}>Minutes_Plan</Text>
-                    <View style={[styles.minuteTab]}>
-                        <Text style={[styles.textMedium, {width: '55%'}]}>Appointing the planning Committee</Text>
-                        <Text>1:00 - 1:20pm</Text>
-                    </View>
+                    {
+                        event.minutes_plan.map((plan: any, index: any)=>{
+                        return (
+                        <View style={[styles.minuteTab, {backgroundColor: index == 0 ? "#B3FC6A" : '#EDEDED'}]}>
+                            <Text style={[styles.textMedium, {width: '55%'}]}>{plan.activity}</Text>
+                            <Text>{plan.duration_minutes} Minutes</Text>
+                        </View>)
+                        })
+                    }
                 </ScrollView>
             </View>
         </Modal>
@@ -128,7 +133,10 @@ const styles = StyleSheet.create({
         borderRadius: 36
     },
     minuteTab: {
-        padding: 15,
+        padding: 20,
+        width: width,
+        marginTop: 10,
+        borderRadius: 40,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'flex-start',

@@ -33,7 +33,6 @@ function WeekDay({day}: any){
 
     const isActive = day === today
 
-    console.log("day props", formatedDayText, "date", formatedDayDate, "today", today)
     return(
         <View style={[styles.weekDayWrap, {backgroundColor: isActive ? Colors.light.background : Colors.dark.background}]}>
             <Text style={[styles.weekDayText, {color: isActive ? Colors.light.text : Colors.dark.text}]}>
