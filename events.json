@@ -3,7 +3,7 @@
     "id": "event-1",
     "title": "Team Meeting",
     "description": "Weekly sync-up to discuss project progress and upcoming tasks.",
-    "time": "2024-11-20T09:00:00Z",
+    "time": "2024-11-21T09:00:00Z",
     "duration": "1 hour",
     "minutes_plan": [
       {
@@ -57,7 +57,7 @@
     "id": "event-2",
     "title": "Client Presentation",
     "description": "Present the final design proposal to the client and gather feedback.",
-    "time": "2024-11-20T14:00:00Z",
+    "time": "2024-11-21T14:00:00Z",
     "duration": "1.5 hours",
     "minutes_plan": [
       {
@@ -111,7 +111,7 @@
     "id": "event-3",
     "title": "Brainstorming Session",
     "description": "Collaborative session to generate ideas for the upcoming marketing campaign.",
-    "time": "2024-11-20T20:00:00Z",
+    "time": "2024-11-21T20:00:00Z",
     "duration": "2 hours",
     "minutes_plan": [
       {
@@ -165,7 +165,7 @@
     "id": "event-32",
     "title": "Client Presentation",
     "description": "Present the final design proposal to the client and gather feedback.",
-    "time": "2024-11-20T21:00:00Z",
+    "time": "2024-11-21T21:00:00Z",
     "duration": "1.5 hours",
     "minutes_plan": [
       {
