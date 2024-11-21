@@ -34,11 +34,17 @@ export default function Index() {
       <DateComponent />
       <ScrollView>
         {
-          events && todaysEvents.map((ev:any, i:any)=>{
+          todaysEvents.length > 0
+          ? 
+          todaysEvents.map((ev:any, i:any)=>{
             return(
               <EventCard key={"ev"+i} index={i} event={ev} onSelect={selectEvent} />
             )
           })
+          :
+          <Text style={{color: Colors.dark.text, marginTop: 100, textAlign: 'center'}}>
+            No Events Today... Enjoy your day :)
+          </Text>
         }
       </ScrollView>
       <EventModal event={selectedEvent} isVisible={showEventModal} onClose={closeEventModal} />
